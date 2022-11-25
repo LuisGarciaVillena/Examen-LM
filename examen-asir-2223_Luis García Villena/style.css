@@ -1,0 +1,122 @@
+.topnav a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-size: 1.35em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+ 
+.centrado{
+    font-family: monospace;
+    font-size: 50px;
+    color: rgb(217, 115, 115);
+    padding: 10px;
+    text-align: right;
+}
+
+body{
+    background-color: rgb(242, 242, 242);
+    font-family: monospace;
+    font-size: large;
+    text-align: center;
+}
+
+footer{
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: "Ubuntu";
+    color: rgb(255, 236, 236);
+    text-align: center;
+    padding: 30px;
+    background: conic-gradient(from 177deg at 0% 100%, rgb(84, 71, 63) 0%, rgb(225, 218, 210) 100%);
+}
+
+@media screen and (max-width: 600px){
+    .galeria .imagen-galeria {
+        grid-template-columns: auto;
+    }
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;display: block;
+    }
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;right: 0;top: 0;
+    }
+    .topnav.responsive a {
+        float: none;display: block;text-align: left;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .imagen-galeria {grid-template-columns: auto auto ;}
+}
+
+.galeria .imagen-galeria img{
+    width: 60%;
+    padding: 20px;
+}
+
+.texto-header p{
+    font-size: 50px;
+    color: rgb(217, 115, 115);
+    padding: 10px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.texto-encima{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card {
+    align-content: center;
+    text-align: center;
+    background-color: rgb(217, 115, 115);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+}
+
+#pioneros {
+    width: 200%;
+    background-color: var(#D97373);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 50px 10px;
+}
